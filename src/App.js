@@ -1,5 +1,4 @@
 import React from 'react';
-import {render} from 'react-dom';
 import styled from 'emotion/react';
 import Title from './components/Title';
 
@@ -19,4 +18,4 @@ const App = () => (
   </AppBody>
 );
 
-render(<App />, document.getElementById('app'));
+export default App;
