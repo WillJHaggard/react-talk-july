@@ -12,3 +12,4 @@ _site/
 *.iml
 .idea/
 public/img
+./data.json
