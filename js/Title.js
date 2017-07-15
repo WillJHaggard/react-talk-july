@@ -1,14 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const MyTitle = props => {
-  const style = {color: props.color};
+const Title = ({title, color}) => {
+  const style = {color};
   return (
     <div>
       <h1 style={style}>
-        {props.title}
+        {title}
       </h1>
     </div>
   );
 };
 
-export default MyTitle;
+Title.PropTypes = {
+  title: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+};
+
+export default Title;
