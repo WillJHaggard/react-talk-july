@@ -19,9 +19,9 @@ const Title = ({children, color}) => {
 };
 
 Title.propTypes = {
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.arrayOf(React.PropTypes.node),
-    React.PropTypes.node,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
   ]),
   color: PropTypes.string,
 };
