@@ -9,7 +9,8 @@
     "api": "node ratingsAPI.js",
     "format": "prettier --list-different --single-quote --print-width=120 \"js/**/*.{js,jsx}\"",
     "lint": "eslint **/*.{js,jsx} --quiet",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "axios": "0.16.1",
