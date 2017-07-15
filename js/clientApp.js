@@ -1,14 +1,15 @@
 import React from 'react';
 import {render} from 'react-dom';
+import MyTitle from './Title';
 
-function MyFirstComponent() {
-  return React.createElement(
-    'div',
-    null,
-    React.createElement(MyTitle, null),
-    React.createElement(MyTitle, null),
-    React.createElement(MyTitle, null)
+const MyFirstComponent = () => {
+  return (
+    <div>
+      <MyTitle title="Props are great!" color="rebeccapurple" />
+      <MyTitle title="Use props everywhere!" color="mediumaquamarine" />
+      <MyTitle title="Props are the best!" color="peru" />
+    </div>
   );
-}
+};
 
 render(React.createElement(MyFirstComponent), document.getElementById('app'));
