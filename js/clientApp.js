@@ -1,12 +1,7 @@
-var MyTitle = function() {
-  return React.createElement(
-    'div',
-    null,
-    React.createElement('h1', null, 'Check out this component!')
-  );
-};
+import React from 'react';
+import {render} from 'react-dom';
 
-var MyFirstComponent = function() {
+function MyFirstComponent() {
   return React.createElement(
     'div',
     null,
@@ -14,9 +9,6 @@ var MyFirstComponent = function() {
     React.createElement(MyTitle, null),
     React.createElement(MyTitle, null)
   );
-};
+}
 
-ReactDOM.render(
-  React.createElement(MyFirstComponent),
-  document.getElementById('app')
-);
+render(React.createElement(MyFirstComponent), document.getElementById('app'));
