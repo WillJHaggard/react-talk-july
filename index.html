@@ -10,29 +10,8 @@
   <div id="app"></div>
   <script src="node_modules/react/dist/react.js"></script>
   <script src="node_modules/react-dom/dist/react-dom.js"></script>
-  <script>
-    var MyTitle = function () {
-      return (
-        React.createElement('div', null,
-          React.createElement('h1', null, 'Check out this component!')
-        )
-      );
-    };
+  <script src="./js/clientApp.js">
 
-    var MyFirstComponent = function () {
-      return (
-        React.createElement('div', null,
-          React.createElement(MyTitle, null),
-          React.createElement(MyTitle, null),
-          React.createElement(MyTitle, null)
-        )
-      );
-    };
-
-    ReactDOM.render(
-      React.createElement(MyFirstComponent),
-      document.getElementById("app")
-    );
   </script>
 </body>
 
