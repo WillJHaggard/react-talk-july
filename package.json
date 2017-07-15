@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/WillJHaggard/react-talk-july.git",
-  "author": "Will J. Haggard <will@magadesign.com> (http://magainteractive.com/)",
+  "author": "Will J. Haggard",
   "license": "MIT",
   "scripts": {
     "api": "node ratingsAPI.js"
