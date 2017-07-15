@@ -1,4 +1,5 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   context: __dirname,
@@ -30,6 +31,26 @@ module.exports = {
       {
         test: /\.js?$/,
         loader: 'babel-loader',
+      },
+      {
+        test: /\.css$/,
+        exclude: /emotion\.css$/,
+        use: ['style-loader', {loader: 'css-loader', options: {modules: true}}],
+      },
+      {
+        test: /emotion\.css$/,
+        use: ['style-loader', {loader: 'css-loader'}],
+      },
+      {
+        test: /\.(jpg|png|svg)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 25000,
+        },
+      },
+      {
+        loader: 'raw-loader',
+        test: /\.(example|md)$/,
       },
     ],
   },
