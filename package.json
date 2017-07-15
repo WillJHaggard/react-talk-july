@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "api": "node ratingsAPI.js",
-    "format": "prettier --list-different --single-quote --print-width=120 \"js/**/*.{js,jsx}\""
+    "format": "prettier --list-different --single-quote --print-width=120 \"js/**/*.{js,jsx}\"",
+    "lint": "eslint **/*.{js,jsx} --quiet"
   },
   "dependencies": {
     "axios": "0.16.1",
