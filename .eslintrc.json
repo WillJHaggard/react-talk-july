@@ -5,6 +5,9 @@
     "ecmaVersion": 2016,
     "sourceType": "module"
   },
+  "rules": {
+    "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}]
+  },
   "env": {
     "es6": true,
     "browser": true,
