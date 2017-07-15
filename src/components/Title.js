@@ -7,24 +7,27 @@ const H1 = styled('h1')`
   letter-spacing: 1px;
 `;
 
-const Title = ({title, color}) => {
+const Title = ({children, color}) => {
   const style = {color};
   return (
     <div>
       <H1 style={style}>
-        {title}
+        {children}
       </H1>
     </div>
   );
 };
 
 Title.propTypes = {
-  title: PropTypes.children,
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.arrayOf(React.PropTypes.node),
+    React.PropTypes.node,
+  ]),
   color: PropTypes.string,
 };
 
 Title.defaultProps = {
-  title: 'Video App',
+  children: 'Video App',
   color: '#1a1a1a',
 };
 
