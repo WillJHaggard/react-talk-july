@@ -29,6 +29,7 @@
     "preact": "8.1.0",
     "preact-compat": "3.16.0",
     "prop-types": "^15.5.10",
+    "ramda": "^0.24.1",
     "raw-loader": "^0.5.1",
     "react": "15.5.4",
     "react-addons-perf": "15.4.2",
