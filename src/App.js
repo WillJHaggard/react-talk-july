@@ -9,7 +9,7 @@ const AppBody = styled('div')`
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url(/public/img/3.jpg);
+  background-image: url(/public/img/2.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
